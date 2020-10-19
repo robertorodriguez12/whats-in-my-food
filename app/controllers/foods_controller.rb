@@ -1,7 +1,6 @@
 class FoodsController < ApplicationController
   def keyword_search
-    @food = FoodService.get_foods(food)
-    binding.pry
+    @food = FoodService.ten_foods(food)
   end
 
   private
