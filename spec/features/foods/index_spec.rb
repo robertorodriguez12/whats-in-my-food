@@ -6,6 +6,7 @@ RSpec.describe "Foods conttoller", type: :feature do
       visit '/'
       fill_in :keyword, with: 'sweet potatoes'
       click_on 'Search'
+      expect(current_path).to eq('/foods')
       expect(page).to have_content('hello')
     end
 
